@@ -1,6 +1,5 @@
 package dao.countrylanguage;
 
-import application.Country;
 import application.CountryLanguage;
 import dao.DAO;
 

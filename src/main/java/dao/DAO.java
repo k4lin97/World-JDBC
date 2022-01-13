@@ -16,8 +16,6 @@ public abstract class DAO<T> {
             list = createListFromResultSet(resultSet);
         } catch (SQLException e) {
             System.out.println("Couldn't create a list: " + e.getMessage());
-        } finally {
-            DatabaseConnector.closeConnection();
         }
         return list;
     }
@@ -30,8 +28,6 @@ public abstract class DAO<T> {
             list = createListFromResultSet(resultSet);
         } catch (SQLException e) {
             System.out.println("Couldn't create a list: " + e.getMessage());
-        } finally {
-            DatabaseConnector.closeConnection();
         }
         return list;
     }
