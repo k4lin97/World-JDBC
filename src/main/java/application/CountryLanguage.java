@@ -32,9 +32,15 @@ public class CountryLanguage {
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Code: ");
         stringBuilder.append(countryCode);
-        stringBuilder.append(" - ");
+        stringBuilder.append(", language: ");
         stringBuilder.append(language);
+        stringBuilder.append(", is official: ");
+        stringBuilder.append(isOfficial);
+        stringBuilder.append(", percentage: ");
+        stringBuilder.append(percentage);
+
         return stringBuilder.toString();
     }
 }
